@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/bgImage"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:text="buttonoperate"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:padding="15dp"/>
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入。。。"/>
+
+    <!--    Button1采用控件onClick属性实现点击事件， -->
+    <!--    点击Button1获取EditText控件内容， -->
+    <!--    显示到TextView中；-->
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button1"
+        android:onClick="click_one"/>
+
+    <!--    Button2使用匿名内部类的方式实现监听事件,-->
+    <!--    点击Button2响应Toast消息对话框；-->
+    <Button
+        android:id="@+id/btn_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button2"/>
+
+<!--    Button3使用接口方式实现监听事件,-->
+<!--    点击Button3响应Log工具提示信息；-->
+    <Button
+        android:id="@+id/btn_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button3"/>
+
+<!--    Button4使用外部类的方式实现监听事件, -->
+<!--    点击Button4设置页面背景；-->
+    <Button
+        android:id="@+id/btn_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="button4"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
