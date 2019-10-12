@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="#3F51B5"
+        android:text="软件更新提示"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        />
+    <TextView
+        android:id="@+id/text_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:text="发现有Widget的新版本，您想现在就安装吗？"
+        android:textColor="#858585"
+        android:textSize="18dp"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btn_leter"
+        android:layout_alignBottom="@id/btn_leter"
+    android:text="现在更新"
+    android:textSize="20dp"/>
+    <Button
+        android:id="@+id/btn_leter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_tip"
+        android:layout_alignRight="@id/text_tip"
+        android:text="以后再说"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
